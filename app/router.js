@@ -10,7 +10,10 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('shop');
+  this.route('shop', function() {
+    this.route('history');
+  });
+  this.route('order', { path: 'orders/:order_id' });
 });
 
 export default Router;

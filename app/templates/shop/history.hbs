@@ -1,0 +1,8 @@
+<h2>HISTORY</h2>
+
+<ul>
+{{#each model as |order|}}
+  <li>{{order.id}}</li>
+{{/each}}
+</ul>
+{{#link-to 'shop'}}Back{{/link-to}}
