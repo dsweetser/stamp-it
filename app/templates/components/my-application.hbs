@@ -21,8 +21,11 @@
   </div>
 </nav>
 
-<h1>Welcome to Ember!</h1>
-
+{{#if isAuthenticated}}
+{{else}}
+  <h1>Welcome to Stamp-It</h1>
+  <p>Let's make some stamps!</p>
+{{/if}}
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
