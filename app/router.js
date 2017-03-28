@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('shop', function() {
-    this.route('history');
+    this.route('orders');
   });
   this.route('order', { path: 'orders/:order_id' });
 });

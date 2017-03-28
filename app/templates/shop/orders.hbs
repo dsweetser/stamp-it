@@ -1,7 +1,9 @@
-<h2>HISTORY</h2>
+<h2>ORDER HISTORY</h2>
 
-<ul>
+
 {{#each model as |order|}}
+Order {{order.id}}
+<ul>
   {{#if order.shippingAddress}}
   <li>Shipping Address: {{order.shippingAddress}}</li>
   {{/if}}
@@ -10,8 +12,7 @@
   {{/if}}
   <li>Order total: ${{order.total}}</li>
   <li>Completed? {{order.paid}}</li>
-
-
-{{/each}}
 </ul>
+{{/each}}
+
 {{#link-to 'shop'}}Back{{/link-to}}
