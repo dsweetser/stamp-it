@@ -2,7 +2,16 @@
 
 <ul>
 {{#each model as |order|}}
-  <li>{{order.id}}</li>
+  {{#if order.shippingAddress}}
+  <li>Shipping Address: {{order.shippingAddress}}</li>
+  {{/if}}
+  {{#if order.billingAddress}}
+  <li>Billing Address: {{order.billingAddress}}</li>
+  {{/if}}
+  <li>Order total: ${{order.total}}</li>
+  <li>Completed? {{order.paid}}</li>
+
+
 {{/each}}
 </ul>
 {{#link-to 'shop'}}Back{{/link-to}}
