@@ -13,7 +13,9 @@ Router.map(function () {
   this.route('shop', function() {
     this.route('orders');
   });
-  this.route('order', { path: 'orders/:order_id' });
+  this.route('order', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
