@@ -6,6 +6,6 @@ Stamp {{stamp.id}}
   <img src="{{stamp.monochrome_link}}">
   {{/if}}
   <li>Cost: ${{stamp.cost}}</li>
-</ul>
+</ul>{{app-stamp/delete stamp=stamp delete='deleteStamp'}}
 {{/each}}
 {{#link-to 'stamps'}}Back{{/link-to}}
