@@ -12,6 +12,7 @@ Order {{order.id}}
   {{/if}}
   <li>Order total: ${{order.total}}</li>
   <li>Completed? {{order.paid}}</li>
+  {{#unless order.paid}}{{app-order/confirm order=order confirmOrder='confirmOrder'}}{{/unless}}
 </ul>
 {{/each}}
 
