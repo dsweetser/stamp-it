@@ -14,7 +14,9 @@ Router.map(function () {
     this.route('orders');
     this.route('new');
   });
-  this.route('stamps', function() {});
+  this.route('stamps', function() {
+    this.route('stamps');
+  });
 });
 
 export default Router;

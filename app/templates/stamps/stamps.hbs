@@ -1,0 +1,10 @@
+<h1>View Your Stamps</h1>
+{{#each model as |stamp|}}
+Stamp {{stamp.id}}
+<ul>
+  {{#if stamp.monochrome_link}}
+  <img src="${stamp.monochrome_link}">
+  {{/if}}
+  <li>Cost: ${{order.total}}</li>
+</ul>
+{{/each}}
