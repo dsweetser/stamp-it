@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
 actions: {
   deleteStamp(stamp) {
-    console.log(stamp);
     stamp.destroyRecord();
   },
   },
