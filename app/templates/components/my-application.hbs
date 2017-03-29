@@ -21,11 +21,10 @@
   </div>
 </nav>
 
-{{#if isAuthenticated}}
-{{else}}
+{{#unless isAuthenticated}}
   <h1>Welcome to Stamp-It</h1>
   <p>Let's make some stamps!</p>
-{{/if}}
+{{/unless}}
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
