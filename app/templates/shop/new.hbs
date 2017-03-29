@@ -1,0 +1,13 @@
+<h1>New Order</h1>
+<form class="form-group" {{action 'save' on='submit'}}>
+  Billing Address: {{input
+    class="form-control"
+    value=order.shippingAddress
+  }}
+  <br>
+  Shipping Address: {{input
+    class="form-control"
+    value=order.billingAddress
+  }}
+</form>
+<button class="btn btn-xs btn-danger" {{action 'cancel'}}>Cancel</button>

@@ -12,8 +12,6 @@ Router.map(function () {
   this.route('users');
   this.route('shop', function() {
     this.route('orders');
-  });
-  this.route('order', function() {
     this.route('new');
   });
 });
