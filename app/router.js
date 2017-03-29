@@ -16,6 +16,7 @@ Router.map(function () {
   });
   this.route('stamps', function() {
     this.route('stamps');
+    this.route('new');
   });
 });
 
