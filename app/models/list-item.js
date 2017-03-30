@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  order: DS.belongsTo('order', { async: true }),
-  stamp: DS.belongsTo('stamp', { async: true }),
+  order: DS.attr('number'),
+  stamp: DS.attr('number'),
 });
