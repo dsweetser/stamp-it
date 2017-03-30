@@ -6,7 +6,11 @@ export default Ember.Route.extend({
   },
 actions: {
   deleteStamp(stamp) {
-    stamp.destroyRecord();
+    stamp.destroyRecord()
+    .catch(() => {
+      this.get('flashMessages')
+      .danger('That stamp has been used for an order and cannot be deleted.');
+    });
   },
   },
 });
