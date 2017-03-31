@@ -8,6 +8,10 @@ Unfortuantely, Ember was too much for me given the time frame of the project.  A
 
 The biggest individual hurdle I face continues to be datatypes.  While I've figured out how to console log data types in Javascript, Ember proved to be elusive to me.  There's a bit of code that I think should work to set the current order equal to the oldest order that is left open, but it's not functioning the way I want and I honestly don't know why.
 
+API: https://github.com/dsweetser/stamp-it-api
+Deployed Front End: https://dsweetser.github.io/stamp-it/
+Deployed API: https://dry-basin-81323.herokuapp.com/
+
 ## User Stories
 I want to be able to sign up/sign in
 I want to be able to create an order
