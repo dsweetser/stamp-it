@@ -18,22 +18,25 @@ actions: {
   addStampToOrder(stamp) {
       // console.log(Ember.get(stamp,'id'));
       // console.log(Ember.get('cart', 'currentOrder'));
-      let newListItem = this.store.createRecord('list_item', {
-        stamp: +Ember.get(stamp, 'id'),
-        order: 3
+    let newListItem = this.store.createRecord('list-item');
+    Ember.set(newListItem,'stamp', stamp);
+    Ember.set(newListItem,'order', this.get('cart.currentOrder'));
+    newListItem.save().catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Do you have a cart selected?');
       });
       // let listItem = function () {
       //   return this.get('store').findAll('list_item')
       // }
 
-      console.log(newListItem);
+      // console.log(newListItem);
 
       // this.get('stamp').set('listItemId', newListItem)
 
-      newListItem.save().catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem. Do you have a cart selected?');
-      });
+      // newListItem.save().catch(() => {
+      //   this.get('flashMessages')
+      //   .danger('There was a problem. Do you have a cart selected?');
+      // });
     },
   },
 });
