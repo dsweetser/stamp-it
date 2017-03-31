@@ -1,4 +1,4 @@
-(http://i.imgur.com/BoOUXrE.png)
+![Stamp-It Image](http://i.imgur.com/BoOUXrE.png)
 
 # Stamp-It!
 
@@ -17,4 +17,4 @@ I would like to be able to see previous orders
 I would like to see the total price of items in my cart
 
 ## Wireframes
-(http://i.imgur.com/CpsVLnm.jpg)
+![Wireframes](http://i.imgur.com/CpsVLnm.jpg)
